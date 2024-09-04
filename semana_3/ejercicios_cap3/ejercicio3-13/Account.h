@@ -37,6 +37,8 @@ public: // Atributos publicos
     std::string getName() const {
         return name;
     }
+
+
 private:
     std::string name;
     int balance{0};

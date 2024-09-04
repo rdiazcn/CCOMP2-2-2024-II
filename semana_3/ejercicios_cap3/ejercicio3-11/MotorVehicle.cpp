@@ -15,4 +15,5 @@ int main(){
     vehiculo1.displayCarDetails();
     std::cout << "Vehiculo 2:\n";
     vehiculo2.displayCarDetails();
+    
 }

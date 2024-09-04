@@ -7,8 +7,7 @@
 
 using namespace std;
 
-int main(){
-
+int main() {
 
     Invoice invoice1{"AW103", "Piston de Gas",
             4, 40, 0.19, 0.12};
