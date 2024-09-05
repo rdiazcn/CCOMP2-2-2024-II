@@ -7,10 +7,7 @@ class Account {
 public: // Atributos publicos
 
     Account(std::string accountName, int initialBalance)
-        : name{accountName} {
-
-
-
+        : name{accountName} {    
         if (initialBalance>0) {
             balance = initialBalance;
         }
@@ -23,6 +20,12 @@ public: // Atributos publicos
         }
     }
 
+
+    void setBalance(int initialBalance){
+        if (initialBalance>0) {
+            balance = initialBalance;
+        }
+    }
 
     int getBalance() const {
         return balance;

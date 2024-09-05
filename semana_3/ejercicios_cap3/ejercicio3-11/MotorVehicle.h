@@ -42,10 +42,18 @@ public:
         return col;
     }
 
+    void setAnioManuf (int anioManuf) {
+        if (anioManuf >= 1886) aManuf = anioManuf;
+    }
+
     int getAnioManuf () const {
         return aManuf;
     }
     
+    void setCapacidadMotor (int capacidadMotor) {
+        if (capacidadMotor >= 50) capMotor = capacidadMotor;
+    }
+
     int getCapacidadMotor () const {
         return capMotor;
     }

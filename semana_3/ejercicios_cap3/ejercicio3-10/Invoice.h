@@ -30,17 +30,35 @@ public:
         return d;
     }
 
+    void setItemCant(int itemCant) {
+        if (itemCant > 0) iC = itemCant;
+    }
+
+
     int getItemCant() const {
         return iC;
     }
-    
+
+    void setPrecioPorItem(int precioPorItem){
+        if (precioPorItem > 0) pPI = precioPorItem;
+    }
+
     int getPrecioPorItem() const {
         return pPI;
+    }
+
+    void setVAT(int VAT) {
+        if (VAT > 0) v = VAT;
     }
 
     double getVAT() const{
         return v;
     }
+
+    void setTazaDescuento(int tazaDescuento) {
+        if (tazaDescuento > 0)  tD = tazaDescuento;
+    }
+
     double getTazaDescuento() const{
         return tD;
     }
@@ -49,6 +67,7 @@ public:
         invoiceAmount = ((iC * pPI) * (1+v)) * (1-tD) ;
         return invoiceAmount;
     }
+
 private:
     std::string num,  d;
     int iC{0}, pPI{0};

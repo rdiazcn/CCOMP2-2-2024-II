@@ -4,7 +4,7 @@
 class Account {
 public: // Atributos publicos
 
-    Account(std::string accountName, int initialBalance)
+    explicit Account(std::string accountName, int initialBalance)
     : name{accountName} {
         if (initialBalance>0) {
             balance = initialBalance;
