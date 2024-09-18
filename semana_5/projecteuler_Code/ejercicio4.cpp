@@ -13,5 +13,5 @@ int main() {
     int x{100}, y{100};
     if ((x * y) > 100000) {
         isSixDigitPalindrome(x*y);
-    }
+    }   
 }
