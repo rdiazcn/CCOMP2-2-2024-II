@@ -18,9 +18,10 @@ int main() {
 
 
     // Aritmetica de punteros
+
     int *ini = array;
     cout << ini << "-" << *ini << endl;
-    ini++; // El puntero ahora apunta al siguiente elemento
+    ini++; 
     cout << ini << "-" << *ini << endl;
 
     int *end = array + 4;
@@ -28,4 +29,7 @@ int main() {
     end--;
     cout << end << "-" << *end << endl;
 
+    if (ini < end) {
+        cout << ini << " < " << end;
+    }
 }

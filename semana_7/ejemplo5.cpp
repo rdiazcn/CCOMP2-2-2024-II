@@ -8,7 +8,7 @@ int main() {
 
     cout << ptr << endl;
     cout << *ptr << endl;
-
+    
 
     // cout << arr no es una instruccion valida por la libreria array
     return 0;
